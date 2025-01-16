@@ -1,14 +1,27 @@
-/* Ini File CSS */
+/* File CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: #483D89;
+}
 .main-header {
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color:#F2F7FA
 }
 
 .logo-icon {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin-left: 10px;
     background-image: url(https://picsum.photos/200);
     background-size: cover;
 }
@@ -16,41 +29,67 @@
 nav {
     display: flex;
 }
-
 .left-rounded {
     border-radius: 4px 0 0 4px;
 }
-
 .right-rounded {
     border-radius: 0 4px 4px 0;
 }
-
 nav > a {
-    width: 110px;
-    border: 1px solid black;
+    width: 100px;
     padding: 7px;
-    color: black;
+    color: #483D89;
     text-decoration: none;
     text-align: center;
 }
 
+.register-btn {
+    background-color: #BA84FE;
+    color: #483D89;
+    border: 1px solid #483D89;
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 7px;
+    text-decoration: none;
+}
+
 .banner-image {
     height: 578px;
-    background-image: url(https://picsum.photos/1000);
     background-size: cover;
     background-position: bottom;
 }
 
+.banner-image-1 {
+    background-image: url(https://picsum.photos/1001);
+}
+
+.banner-image-2 {
+    background-image: url(https://picsum.photos/1002);
+}
+
+.banner-image-3 {
+    background-image: url(https://picsum.photos/1003);
+}
+
+.about {
+    background-color: #FCEFF8;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.our-profile {
+    background-color: #FCEFF8;
+    padding: 20px;
+}
 .content {
     height: 500px;
 }
-
 .store {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .store-image {
     border: 1px solid;
     border-radius: 50%;
@@ -58,6 +97,48 @@ nav > a {
     width: 100px;
 }
 
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #483D89;
+    background-image: url(https://picsum.photos/200);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-input {
+    width: 300px;
+}
+
+.submit-btn {
+    background-color: #BA84FE;
+    color: #483D89;
+    border: 1px solid #483D89;
+    border-radius: 4px;
+    padding: 7px;
+    width: 355px;
+    text-decoration: none;
+}
+
+.result-form {
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+}
+
 .footer {
     text-align: center;
+}
+
+/* CSS mobile */
+@media only screen and (max-width : 480px) {
+    
 }
